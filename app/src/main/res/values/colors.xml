@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#333333</color>
+    <color name="gray">#dfe6e9</color>
+    <color name="gray_dark">#777777</color>
+    <color name="black_rgba_30">#4D333333</color>#26000000
+    <color name="black_rgba_15">#26000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primary">#36622B</color>
+    <color name="second">#729D39</color>
+    <color name="third">#C6E377</color>
+    <color name="fourth">#FBFAD3</color>
+    <color name="fifth">#FFFFE6</color>
+    <color name="background_text_color">#4d000000</color>
+    <color name="cost_color">#ff3333</color>
+    <color name="background_cost_color">#b3ff1a1a</color>
+    <color name="transparent">#00FFFFFF</color>
+</resources>

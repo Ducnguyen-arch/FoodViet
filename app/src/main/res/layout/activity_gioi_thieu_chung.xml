@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fifth"
+    android:orientation="vertical"
+    tools:context=".activity.GioiThieuChungActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_Gioithieuchung"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/primary"
+        app:navigationIcon="@drawable/ic_back_button"
+        app:title="@string/introduce"
+        app:titleTextColor="@color/white">
+
+        <FrameLayout
+            android:layout_width="@dimen/wrap_cart_width"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_gravity="end"
+            android:layout_marginRight="@dimen/margin_1_2">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="openCart">
+
+                <ImageView
+                    android:id="@+id/miniCart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_cart" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|left"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="22dp"
+                    android:background="@color/cost_color"
+                    android:elevation="@dimen/margin_1"
+                    app:cardCornerRadius="100dp">
+
+                    <TextView
+                        android:id="@+id/thongbao_soluong"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/cost_color"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:visibility="visible" />
+                </androidx.cardview.widget.CardView>
+            </FrameLayout>
+        </FrameLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_1_2"
+        android:layout_marginBottom="@dimen/margin_1_2"
+        android:background="@color/third">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:onClick="ToHome">
+
+            <ImageView
+                android:layout_width="@dimen/item_logo_top_size"
+                android:layout_height="@dimen/item_logo_top_size"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/margin_1_2"
+                android:src="@drawable/logo_app" />
+
+            <TextView
+                android:layout_width="@dimen/app_name_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/dancing_script_medium"
+                android:paddingBottom="@dimen/padding_text"
+                android:text="@string/app_name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_big"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/label_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:padding="@dimen/padding_1"
+            android:text="@string/res_name"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/text_size_meidum"
+            android:textStyle="bold" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/btn_lienhe"
+            android:layout_below="@+id/label_top"
+            android:layout_marginTop="@dimen/margin_1_2"
+            android:layout_marginBottom="@dimen/margin_1_2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin_1"
+                android:layout_marginRight="@dimen/margin_1"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="@dimen/margin_1_2"
+                    android:layout_marginBottom="@dimen/margin_1_2"
+                    android:elevation="@dimen/margin_1"
+                    app:cardCornerRadius="@dimen/radius">
+
+                    <ImageView
+                        android:id="@+id/img_hinhnhahang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/nha_hang" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_1_2"
+                    android:drawableTop="@drawable/ic_location"
+                    android:drawablePadding="@dimen/padding_1"
+                    android:paddingStart="@dimen/padding_1"
+                    android:text="@string/res_address"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size"
+                    android:textStyle="italic" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="167dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp">
+
+                    <fragment
+                        android:id="@+id/map"
+                        android:name="com.google.android.gms.maps.SupportMapFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        tools:context=".activity.GioiThieuChungActivity" />
+                </FrameLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+
+        <Button
+            android:id="@+id/btn_lienhe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin_2"
+            android:layout_marginTop="@dimen/margin_1_2"
+            android:layout_marginRight="@dimen/margin_2"
+            android:layout_marginBottom="@dimen/margin_1"
+            android:background="@drawable/custom_button"
+            android:backgroundTint="@color/second"
+            android:onClick="ToLienHe"
+            android:text="@string/contact"
+            android:textColor="@color/fifth"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+</LinearLayout>
