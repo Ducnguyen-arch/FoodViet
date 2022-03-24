@@ -3,7 +3,7 @@ App Final Project Android
 
 View Foods by RecyclerView , GridLayout, LinearLayout
 
-View Food, Categories
+View Food, Categories,
 Cart,
 Checkout,
 Delete Foods,
